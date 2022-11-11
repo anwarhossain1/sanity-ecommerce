@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { HeroBanner } from '../components'
 const Home = () => {
   return (
    <>
-   Herobanner
+   <HeroBanner/>
     <div>
 
-       <div>
+       <div className="products-heading">
       <h2>Best Seller Products</h2>
       <p>speaker There are many variations passages</p>
     </div>
