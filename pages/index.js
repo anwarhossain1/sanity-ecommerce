@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroBanner } from '../components'
+import { HeroBanner, Product } from '../components'
 import { client } from '../lib/client'
 const Home = ({ products, bannerData}) => {
   console.log('gg', products)
@@ -12,6 +12,10 @@ const Home = ({ products, bannerData}) => {
       <h2>Best Seller Products</h2>
       <p>speaker There are many variations passages</p>
     </div>
+    <div className="products-container">
+      {products?.map((product) => <Product key={product._id} product={product} />)}
+    </div>
+
       </div>
    </>
   )
